@@ -17,7 +17,7 @@ De belangrijkste andere containers zijn:
 
 In principe moeten er geen Docker containers toegevoegd over aangepast worden voor het uitvoeren van de minimale vereisten van dit project. VOor extra's kan dit eventueel nodig zijn, doe dit in samenspraak met Sam&Sam.
 
-Om via ROS te communiceren met de duckiebot, moeten de ROS_MASTER_URI en ROS_IP exports op de juiste waarde gezet worden. ROS_MASTER_URI moet als waarde het IP van de duckiebot krijgen, ROS_IP moet als waarde het IP van de laptop krijgen.
+Om via ROS te communiceren met de duckiebot, moeten de `ROS_MASTER_URI` en `ROS_IP` exports op de juiste waarde gezet worden. `ROS_MASTER_URI` moet als waarde het IP van de duckiebot krijgen, `ROS_IP` moet als waarde het IP van de laptop krijgen.
 (**TODO** double check of dit alle requirements zijn)
 
 #### Quick/Quack checks
