@@ -1,5 +1,5 @@
 # Research Project 19-20
-## PXL Digital [AI]
+## PXL Digital | AI & Robotics
 
 ### Camera
 We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via ROS, wanneer je op hetzelfde netwerk zit als de camera zelf.
