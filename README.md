@@ -24,5 +24,5 @@ Om via ROS te communiceren met de duckiebot, moeten de `ROS_MASTER_URI` en `ROS_
 
 Als alle ROS parameters juist zijn ingesteld, kan je bv. via een `rostopic list` command kijken of de beschikbare ROS topics ook die van de duckiebot bevatten (bv. joy/... **TODO**)
 
-Er kunnen ook default containers gebruikt worden om bv. [via keyboard de duckiebot te besturen](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/rc_control.html) te doen. Hiervoor heb je wel `dts` (duckietown-shell) nodig. Omdat jullie dit in principe niet nodig hebben voor jullie minimale requirements, verwijzen we hiervoor naar de [Duckietown documentatie](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/laptop_setup.html).
+Er kunnen ook default containers gebruikt worden om bv. [via keyboard de duckiebot te besturen](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/rc_control.html). Hiervoor heb je wel `dts` (duckietown-shell) nodig. Omdat jullie dit in principe niet nodig hebben voor jullie minimale requirements, verwijzen we hiervoor naar de [Duckietown documentatie](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/laptop_setup.html).
 **Let op:** deze documentatie kan soms verwarrend zijn, vraag eerst even raad aan het onderwijsteam voor je hier aan begint.
