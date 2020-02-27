@@ -1,9 +1,16 @@
 # Research Project 19-20
 ## PXL Digital | AI & Robotics
 
+### Disclaimer: Deze README is een work in progress
+
 ### Camera
-We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via ROS, wanneer je op hetzelfde netwerk zit als de camera zelf.
-Dit netwerk is toegankelijk via ... (**TODO**)
+We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via ROS als je volgende stappen onderneemt:
+- Clone de [RODIPCa](https://github.com/PXLRoboticsLab/RODIPCa) github repo
+- Verbind met het netwerk ```AI Hub Devices``` (wachtwoord wordt via Slack gecommuniceerd)
+- Start ```roscore```
+- Run het RODIPCa script ```connect.py``` met de gewenste parameters (adres en login camera wordt via Slack gecommuniceerd)
+
+Nadien zou met bv. ```rostopic list``` een nieuwe topic zichtbaar moeten zijn (eventueel met de gespecifieerde naam) waarop je kan subscriben om de camerabeelden binnen te halen.
 
 ### Duckumentation
 De duckiebots zijn onderdeel van het [Duckietown](https://www.duckietown.org/) pakket (niet te verwarren met [Ducktown](https://nl.wikipedia.org/wiki/Ducktown)), dat ontwikkeld werd aan MIT. 
