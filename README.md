@@ -18,18 +18,23 @@ Duckiebots werken met een Raspberry Pi, waarop Docker draait. Hierin worden enke
 Om een overzicht van de actieve containers op een duckiebot te krijgen, kan je naar http://*duckiebot-naam*.local:9000 gaan om de Portainer interface te openen in de browser. (Ook deze Portainer interface wordt gehost door een container die [op de duckiebot](https://jfk.men/app/uploads/2019/10/Inception-film.png) draait.)
 
 De belangrijkste andere containers zijn:
-- roscore (**TODO**)
-- rosinterface (**TODO**)
-- demo_joystick of custom (**TODO**)
+- roscore (automatisch opgestart **TODO**)
+- rosinterface (automatisch opgestart **TODO**)
+- demo_joystick (opstarten via Portainer interface **TODO**)
 
-In principe moeten er geen Docker containers toegevoegd over aangepast worden voor het uitvoeren van de minimale vereisten van dit project. VOor extra's kan dit eventueel nodig zijn, doe dit in samenspraak met Sam&Sam.
+In principe moeten er verder geen Docker containers toegevoegd over aangepast worden voor het uitvoeren van de minimale vereisten van dit project. Voor extra's kan dit eventueel nodig zijn, doe dit in samenspraak met Sam&Sam.
+
+Om een duckiebot op te starten, voorzie je deze van een opgeladen batterij en steek je de 2 USB kabeltjes er in. De duckiebot zal dan automatisch opstarten. Zo lang de LED's branden, is het opstart-proces nog bezig. Dit kan enkele minuten duren. Het kan soms nog even duren na het doven van de LED's, voor de duckiebot responsief is. Wanneer de LED's uit gaan, probeer je daarom best eerst te pingen naar de duckiebot, om te kijken of hij al responsief is. Pas daarna kan je met de bot communiceren.
+
+```ping duckiebot-naam.local```
 
 Om via ROS te communiceren met de duckiebot, moeten de `ROS_MASTER_URI` en `ROS_IP` exports op de juiste waarde gezet worden. `ROS_MASTER_URI` moet als waarde het IP van de duckiebot krijgen, `ROS_IP` moet als waarde het IP van de laptop krijgen.
-(**TODO** double check of dit alle requirements zijn)
+Het IP van de duckiebot kan je vinden met ```ping duckiebot-naam.local```, je eigen IP met bv. ```ip a```.
+We hebben ook een scriptje geschreven om deze initialisatie automatisch te doen, dit wordt binnenkort op deze git repo geplaatst.
 
 #### Quick/Quack checks
 
-Als alle ROS parameters juist zijn ingesteld, kan je bv. via een `rostopic list` command kijken of de beschikbare ROS topics ook die van de duckiebot bevatten (bv. joy/... **TODO**)
+Als alle ROS parameters juist zijn ingesteld, kan je bv. via een `rostopic list` command kijken of de beschikbare ROS topics ook die van de duckiebot bevatten (bv. ```/duckiebot-naam/joy```)
 
 Er kunnen ook default containers gebruikt worden om bv. [via keyboard de duckiebot te besturen](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/rc_control.html). Hiervoor heb je wel `dts` (duckietown-shell) nodig. Omdat jullie dit in principe niet nodig hebben voor jullie minimale requirements, verwijzen we hiervoor naar de [Duckietown documentatie](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/laptop_setup.html).
 **Let op:** deze documentatie kan soms verwarrend zijn, vraag eerst even raad aan het onderwijsteam voor je hier aan begint.
