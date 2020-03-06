@@ -22,7 +22,7 @@ De belangrijkste andere containers zijn:
 - rosinterface (automatisch opgestart **TODO**)
 - demo_joystick (opstarten via Portainer interface **TODO**)
 
-In principe moeten er verder geen Docker containers toegevoegd over aangepast worden voor het uitvoeren van de minimale vereisten van dit project. Voor extra's kan dit eventueel nodig zijn, doe dit in samenspraak met Sam&Sam.
+In principe moeten er verder geen Docker containers toegevoegd of aangepast worden voor het uitvoeren van de minimale vereisten van dit project. Voor extra's kan dit eventueel nodig zijn, doe dit in samenspraak met Sam&Sam.
 
 Om een duckiebot op te starten, voorzie je deze van een opgeladen batterij en steek je de 2 USB kabeltjes er in. De duckiebot zal dan automatisch opstarten. Zo lang de LED's branden, is het opstart-proces nog bezig. Dit kan enkele minuten duren. Het kan soms nog even duren na het doven van de LED's, voor de duckiebot responsief is. Wanneer de LED's uit gaan, probeer je daarom best eerst te pingen naar de duckiebot, om te kijken of hij al responsief is. Pas daarna kan je met de bot communiceren.
 
