@@ -13,9 +13,11 @@ We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via 
 Nadien zou met bv. ```rostopic list``` een nieuwe topic zichtbaar moeten zijn (eventueel met de gespecifieerde naam) waarop je kan subscriben om de camerabeelden binnen te halen.
 
 ### Duckumentation
+*duckiebot-naam* moet overal vervangen worden met de naame van de bot die jullie team probeert aan te spreken. Hier kan ook het statische IP voor gebruikt worden in plaats van de naam.
+
 De duckiebots zijn onderdeel van het [Duckietown](https://www.duckietown.org/) pakket (niet te verwarren met [Ducktown](https://nl.wikipedia.org/wiki/Ducktown)), dat ontwikkeld werd aan MIT. 
 Duckiebots werken met een Raspberry Pi, waarop Docker draait. Hierin worden enkele container gedeployed die het mogelijk maken om rechtstreeks met de duckiebot te communiceren via ROS.
-Om een overzicht van de actieve containers op een duckiebot te krijgen, kan je naar http://*duckiebot-naam*.local:9000 gaan om de Portainer interface te openen in de browser. (Ook deze Portainer interface wordt gehost door een container die [op de duckiebot](https://jfk.men/app/uploads/2019/10/Inception-film.png) draait.)
+Om een overzicht van de actieve containers op een duckiebot te krijgen, kan je naar http://*duckiebot-naam*(.local):9000 gaan om de Portainer interface te openen in de browser. (Ook deze Portainer interface wordt gehost door een container die [op de duckiebot](https://jfk.men/app/uploads/2019/10/Inception-film.png) draait.)
 
 De belangrijkste andere containers zijn:
 - roscore (automatisch opgestart **TODO**)
