@@ -32,6 +32,13 @@ Om via ROS te communiceren met de duckiebot, moeten de `ROS_MASTER_URI` en `ROS_
 Het IP van de duckiebot kan je vinden met ```ping duckiebot-naam.local```, je eigen IP met bv. ```ip a```.
 We hebben ook een scriptje geschreven om deze initialisatie automatisch te doen, dit wordt binnenkort op deze git repo geplaatst.
 
+#### Richtlijnen gebruik duckiebots
+
+1. Batterij van duckiebots niet opladen tijdens dat ze aan staan.
+2. Niet op tafels testen, duckiebots steeds op grond zetten. Door lag of bug kan de bot onverwachts bewegen en van de tafel vallen.
+3. **BE PATIENT** - *Overall, duckies are extremely chill and will not hurry up if you get angry.*
+4. ...
+
 #### Quick/Quack checks
 
 Als alle ROS parameters juist zijn ingesteld, kan je bv. via een `rostopic list` command kijken of de beschikbare ROS topics ook die van de duckiebot bevatten (bv. ```/duckiebot-naam/joy```)
