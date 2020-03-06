@@ -38,8 +38,8 @@ We hebben ook een scriptje geschreven om deze initialisatie automatisch te doen,
 
 1. Batterij van duckiebots niet opladen wanneer ze gebruikt worden om een duckiebot te voeden.
 2. Niet op tafels testen, duckiebots steeds op grond zetten. Door lag of bug kan de bot onverwachts bewegen en van de tafel vallen.
-3. **BE PATIENT** - *Overall, duckies are extremely chill and will not hurry up if you get angry.*
-4. ...
+3. **BE PATIENT** - *Eenden zijn rustige beestjes en zullen zich niet haasten als je boos wordt op hen.*
+4. Don't be **TOO** patient - *Wanneer de LED's van de duckiebot al 10 minuten uit zijn na opstarten, dan kan je best eens proberen om hem [uit en aan](https://www.cipher-it.co.uk/wp-content/uploads/2017/11/ITCrow.jpg) te zetten.*
 
 #### Quick/Quack checks
 
