@@ -4,6 +4,8 @@
 ### Disclaimer: Deze README is een work in progress
 
 ### Camera
+
+#### AI Hub setup
 We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via ROS als je volgende stappen onderneemt:
 - Clone de [RODIPCa](https://github.com/PXLRoboticsLab/RODIPCa) github repo
 - Verbind met het netwerk ```AI Hub Devices``` (wachtwoord wordt via Slack gecommuniceerd)
@@ -11,6 +13,9 @@ We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via 
 - Run het RODIPCa script ```connect.py``` met de gewenste parameters (adres en login camera wordt via Slack gecommuniceerd)
 
 Nadien zou met bv. ```rostopic list``` een nieuwe topic zichtbaar moeten zijn (eventueel met de gespecifieerde naam) waarop je kan subscriben om de camerabeelden binnen te halen.
+
+#### Remote setup: rosbag
+TODO
 
 ### Duckumentation
 *duckiebot-naam* moet overal vervangen worden met de naame van de bot die jullie team probeert aan te spreken. Hier kan ook het statische IP voor gebruikt worden in plaats van de naam.
@@ -20,11 +25,15 @@ Duckiebots werken met een Raspberry Pi, waarop Docker draait. Hierin worden enke
 Om een overzicht van de actieve containers op een duckiebot te krijgen, kan je naar http://*duckiebot-naam*(.local):9000 gaan om de Portainer interface te openen in de browser. (Ook deze Portainer interface wordt gehost door een container die [op de duckiebot](https://jfk.men/app/uploads/2019/10/Inception-film.png) draait.)
 
 De belangrijkste andere containers zijn:
-- roscore (automatisch opgestart **TODO**)
-- rosinterface (automatisch opgestart **TODO**)
-- demo_joystick (opstarten via Portainer interface **TODO**)
+- roscore
+- rosinterface
+- demo_joystick : stelt enkele ROS topics open om de duckiebot aan te sturen
+Deze containers worden normaal gezien automatisch opgestart.
 
 In principe moeten er verder geen Docker containers toegevoegd of aangepast worden voor het uitvoeren van de minimale vereisten van dit project. Voor extra's kan dit eventueel nodig zijn, doe dit in samenspraak met Sam&Sam.
+
+Zorg er in eerste instantie voor dat je met je laptop op hetzelfde netwerk verbonden bent als de duckie. Anders kunnen de devices elkaar niet vinden en dus ook niet communiceren. Standaard verbinden de duckiebots met het `AI Hub Devices_5Ghz` netwerk op de AI Hub. Zorg dus dat jij dat ook doet als je wil communiceren met de bot. Het wachtwoord voor dit netwerk werd reeds via Slack gecommuniceerd.
+Als tweede optie hebben we er voor gezorgd dat de duckies proberen te verbinden met een mobiele hotspot `duckienet` en het wachtwoord `quackquack`. Dit kan je gebruiken om thuis de duckiebots te integreren in jullie project.
 
 Om een duckiebot op te starten, voorzie je deze van een opgeladen batterij en steek je de 2 USB kabeltjes er in. De duckiebot zal dan automatisch opstarten. Zo lang de LED's branden, is het opstart-proces nog bezig. Dit kan enkele minuten duren. Het kan soms nog even duren na het doven van de LED's, voor de duckiebot responsief is. Wanneer de LED's uit gaan, probeer je daarom best eerst te pingen naar de duckiebot, om te kijken of hij al responsief is. Pas daarna kan je met de bot communiceren.
 
@@ -34,9 +43,9 @@ Om via ROS te communiceren met de duckiebot, moeten de `ROS_MASTER_URI` en `ROS_
 Het IP van de duckiebot kan je vinden met ```ping duckiebot-naam.local```, je eigen IP met bv. ```ip a```.
 We hebben ook een scriptje geschreven om deze initialisatie automatisch te doen, dit wordt binnenkort op deze git repo geplaatst.
 
-#### Richtlijnen gebruik duckiebots
+#### Richtlijnen voor gebruik van duckiebots
 
-1. Batterij van duckiebots niet opladen wanneer ze gebruikt worden om een duckiebot te voeden.
+1. Batterij van duckiebots **niet** opladen terwijl de duckiebot zelf aan staat. Steeds ontkoppelen en dan opladen.
 2. Niet op tafels testen, duckiebots steeds op grond zetten. Door lag of bug kan de bot onverwachts bewegen en van de tafel vallen.
 3. **BE PATIENT** - *Eenden zijn rustige beestjes en zullen zich niet haasten als je boos wordt op hen.*
 4. Don't be **TOO** patient - *Wanneer de LED's van de duckiebot al 10 minuten uit zijn na opstarten en de duckiebot is nog niet responsief (ping) : best eens proberen om hem opnieuw [uit en aan](https://www.cipher-it.co.uk/wp-content/uploads/2017/11/ITCrow.jpg) te zetten.*
