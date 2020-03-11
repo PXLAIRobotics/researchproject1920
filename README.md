@@ -1,7 +1,7 @@
 # Research Project 19-20
 ## PXL Digital | AI & Robotics
 
-### Disclaimer: Deze README is een work in progress
+### Deze README wordt, samen met de andere bestanden in de repo, regelmatig aangevuld.
 
 ### Camera
 
