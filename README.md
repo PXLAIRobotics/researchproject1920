@@ -3,7 +3,7 @@
 
 ### Deze README wordt, samen met de andere bestanden in de repo, regelmatig aangevuld.
 
-### Camera
+### IP Camera
 
 #### AI Hub setup
 We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via ROS als je volgende stappen onderneemt:
@@ -15,7 +15,9 @@ We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via 
 Nadien zou met bv. ```rostopic list``` een nieuwe topic zichtbaar moeten zijn (eventueel met de gespecifieerde naam) waarop je kan subscriben om de camerabeelden binnen te halen.
 
 #### Remote setup: rosbag
-TODO
+Om remote al wat werk te kunnen doen richting communicatie met de IP camera, proberen we zo snel mogelijk een `rosbag` te voorzien. Dit kan je zien als een soort recording van één of meerdere ROS topics en de berichten die er over verstuurd worden. Deze kan je opnieuw afspelen en zo dus 'simuleren'. Op die manier kan je dan in je applicatie naar de opgenomen data luisteren alsof dat het *live* beeld is. Dit kan je dan reeds in je applicatie proberen te tonen, zodat jullie nadien enkel de koppeling eventueel wat moeten aanpassen.
+
+Meer info hierover volgt zodra de rosbag beschikbaar is.
 
 ### Duckumentation
 *duckiebot-naam* moet overal vervangen worden met de naame van de bot die jullie team probeert aan te spreken. Hier kan ook het statische IP voor gebruikt worden in plaats van de naam.
