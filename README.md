@@ -16,8 +16,21 @@ Nadien zou met bv. ```rostopic list``` een nieuwe topic zichtbaar moeten zijn (e
 
 #### Remote setup: rosbag
 Om remote al wat werk te kunnen doen richting communicatie met de IP camera, proberen we zo snel mogelijk een `rosbag` te voorzien. Dit kan je zien als een soort recording van één of meerdere ROS topics en de berichten die er over verstuurd worden. Deze kan je opnieuw afspelen en zo dus 'simuleren'. Op die manier kan je dan in je applicatie naar de opgenomen data luisteren alsof dat het *live* beeld is. Dit kan je dan reeds in je applicatie proberen te tonen, zodat jullie nadien enkel de koppeling eventueel wat moeten aanpassen.
+We geven jullie hieronder de info die jullie normaal nodig hebben, maar een andere tutorial kunnen jullie [hier](http://wiki.ros.org/rosbag/Tutorials/Recording%20and%20playing%20back%20data) vinden.
 
-Meer info hierover volgt zodra de rosbag beschikbaar is.
+De rosbag kan je afspelen door in een terminal naar de folder te navigeren waar het rosbag bestand is opgeslagen. Daarna kan je met `rosbag play <naam van het rosbag bestand>` de opgenomen topics weer laten afspelen. Omdat het fragment maar 1 seconde duurt, kan je dit best laten loopen. Dit doe je door de `-l` flag toe te voegen.
+
+`rosbag play -l 2020-03-12-20-20-05.bag`
+
+Let er op dat `roscore` ook moet opstaan voordat je dit doet. Na het opstarten van de recording, kan je normaal gezien de opgenomen topic zien. Na `rostopic list` zou je dus het volgende moeten zien:
+
+`sam@sam:~$ rostopic list
+/clock
+/duckiecam/compressed
+/rosout
+/rosout_agg`
+
+De topic `/duckiecam/compressed` is dezelfde die jullie zullen opvragen aan de 'live' camera, dus hiermee kunnen jullie voorlopig aan de slag om dit te integreren in de applicatie en computer vision algoritmen uit te proberen.
 
 ### Duckumentation
 *duckiebot-naam* moet overal vervangen worden met de naame van de bot die jullie team probeert aan te spreken. Hier kan ook het statische IP voor gebruikt worden in plaats van de naam.
