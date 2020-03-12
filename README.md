@@ -1,11 +1,11 @@
 # Research Project '19-'20
 ## PXL Digital | AI & Robotics
 
-### Deze README wordt, samen met de andere bestanden in de repo, regelmatig aangevuld.
+#### Deze README wordt, samen met de andere bestanden in de repo, regelmatig aangevuld.
 
-### IP Camera
+## IP Camera
 
-#### AI Hub setup
+### AI Hub setup
 We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via ROS als je volgende stappen onderneemt:
 - Clone de [RODIPCa](https://github.com/PXLRoboticsLab/RODIPCa) github repo
 - Verbind met het netwerk ```AI Hub Devices``` (wachtwoord wordt via Slack gecommuniceerd)
@@ -14,7 +14,7 @@ We gebruiken een DLink IP camera (dcs-4602ev). Deze kan aangesproken worden via 
 
 Nadien zou met bv. ```rostopic list``` een nieuwe topic zichtbaar moeten zijn (eventueel met de gespecifieerde naam) waarop je kan subscriben om de camerabeelden binnen te halen.
 
-#### Remote setup: rosbag
+### Remote setup: rosbag
 Om remote al wat werk te kunnen doen richting communicatie met de IP camera, proberen we zo snel mogelijk een `rosbag` te voorzien. Dit kan je zien als een soort recording van één of meerdere ROS topics en de berichten die er over verstuurd worden. Deze kan je opnieuw afspelen en zo dus 'simuleren'. Op die manier kan je dan in je applicatie naar de opgenomen data luisteren alsof dat het *live* beeld is. Dit kan je dan reeds in je applicatie proberen te tonen, zodat jullie nadien enkel de koppeling eventueel wat moeten aanpassen.
 We geven jullie hieronder de info die jullie normaal nodig hebben, maar een andere tutorial kunnen jullie [hier](http://wiki.ros.org/rosbag/Tutorials/Recording%20and%20playing%20back%20data) vinden.
 
@@ -32,7 +32,7 @@ Let er op dat `roscore` ook moet opstaan voordat je dit doet. Na het opstarten v
 
 De topic `/duckiecam/compressed` is dezelfde die jullie zullen opvragen aan de 'live' camera, dus hiermee kunnen jullie voorlopig aan de slag om dit te integreren in de applicatie en computer vision algoritmen uit te proberen.
 
-### Duckumentation
+## Duckumentation
 *duckiebot-naam* moet overal vervangen worden met de naame van de bot die jullie team probeert aan te spreken. Hier kan ook het statische IP voor gebruikt worden in plaats van de naam.
 
 De duckiebots zijn onderdeel van het [Duckietown](https://www.duckietown.org/) pakket (niet te verwarren met [Ducktown](https://nl.wikipedia.org/wiki/Ducktown)), dat ontwikkeld werd aan MIT. 
@@ -58,7 +58,7 @@ Om via ROS te communiceren met de duckiebot, moeten de `ROS_MASTER_URI` en `ROS_
 Het IP van de duckiebot kan je vinden met ```ping duckiebot-naam.local```, je eigen IP met bv. ```ip a```.
 We hebben ook een scriptje geschreven om deze initialisatie automatisch te doen, dit wordt binnenkort op deze git repo geplaatst.
 
-#### Richtlijnen voor gebruik van duckiebots
+### Richtlijnen voor gebruik van duckiebots
 
 0. **Draag zorg voor het materiaal!** We vertrouwen jullie de duckiebots toe, zodat jullie ze mee naar huis kunnen nemen om remote te kunnen werken aan het project. Toon dat dit vertrouwen terecht is!
 1. Batterij van duckiebots **niet** opladen terwijl de duckiebot zelf aan staat. Steeds ontkoppelen en dan opladen.
@@ -67,7 +67,7 @@ We hebben ook een scriptje geschreven om deze initialisatie automatisch te doen,
 4. Don't be **TOO** patient - *Wanneer de LED's van de duckiebot al 10 minuten uit zijn na opstarten en de duckiebot is nog niet responsief (ping) : best eens proberen om hem opnieuw [uit en aan](https://www.cipher-it.co.uk/wp-content/uploads/2017/11/ITCrow.jpg) te zetten.*
 5. Spreek Sam en Sam gerust aan wanneer er problemen blijken te zijn met de duckiebots. Steeds eerst checken voor je zelf configuratie begint aan te passen.
 
-#### Quick/Quack checks
+### Quick/Quack checks
 
 Als alle ROS parameters juist zijn ingesteld, kan je bv. via een `rostopic list` command kijken of de beschikbare ROS topics ook die van de duckiebot bevatten (bv. ```/duckiebot-naam/joy```)
 
