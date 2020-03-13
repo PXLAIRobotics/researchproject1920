@@ -73,3 +73,15 @@ Als alle ROS parameters juist zijn ingesteld, kan je bv. via een `rostopic list`
 
 Er kunnen ook default containers gebruikt worden om bv. [via keyboard de duckiebot te besturen](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/rc_control.html). Hiervoor heb je wel `dts` (duckietown-shell) nodig. Omdat jullie dit in principe niet nodig hebben voor jullie minimale requirements, verwijzen we hiervoor naar de [Duckietown documentatie](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/laptop_setup.html).
 **Let op:** deze documentatie kan soms verwarrend zijn, vraag eerst even raad aan het onderwijsteam voor je hier aan begint.
+
+## QAQ (Quizzically Asked Questions)
+
+#### Ik kan niet pingen met `ping duckienaam.local`
+Probeer in dit geval ook eens `ping duckienaam` of `ping duckie_IP`. Als je hier problemen mee hebt, kan je best steeds <duckiebot.local> vervangen door het IP van de duckiebot.
+
+#### Ik wil de duckiebot verbinden via een router thuis
+Dit kan, maar dan moet je SSH'en naar de Raspberry Pi die op je duckiebot zit. Start je duckie op zoals tevoren. Indien je verbonden bent, kan je SSH'en door `ssh duckie@<duckienaam.local OF duckie_IP>` te doen. Voor het wachtwoord contacteer je Sam en Sam. 
+
+#### Ik moet extra Docker containers installeren op de duckiebot
+**Begin hier voorlopig niet aan, meer info binnenkort op deze plaats!**
+Doe dit __ENKEL__ na overleg met de lectoren! Om extra containers toe te voegen moet je `dts` (duckietown-shell) geinstalleerd hebben. De guide hiervoor is online te vinden, maar wordt hier binnenkort aan toegevoegd.
