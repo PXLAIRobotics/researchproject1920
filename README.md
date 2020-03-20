@@ -56,7 +56,9 @@ Om een duckiebot op te starten, voorzie je deze van een opgeladen batterij en st
 
 Om via ROS te communiceren met de duckiebot, moeten de `ROS_MASTER_URI` en `ROS_IP` exports op de juiste waarde gezet worden. `ROS_MASTER_URI` moet als waarde het IP van de duckiebot krijgen, `ROS_IP` moet als waarde het IP van de laptop krijgen.
 Het IP van de duckiebot kan je vinden met ```ping duckiebot-naam.local```, je eigen IP met bv. ```ip a```.
-We hebben ook een scriptje geschreven om deze initialisatie automatisch te doen, dit wordt binnenkort op deze git repo geplaatst.
+We hebben ook een scriptje geschreven om deze initialisatie automatisch te doen, dit vindt je ook in deze git repo (`duckie_init.sh`)
+
+**Gebruik:** `duckie_init.sh alfred (11311)` waarbij de tweede parameter de ROS master poort is, default staat deze op 11311 en deze moet niet absoluut meegegeven worden. Nadien print het script ook de huidige export values uit zodat je snel kan checken of ze correct staan. *Zorg dat het script uitvoerbaar is. (`chmod`)*
 
 ### Richtlijnen voor gebruik van duckiebots
 
