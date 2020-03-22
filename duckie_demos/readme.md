@@ -2,6 +2,8 @@
 
 *The duckie in our guide is called 'erna'. Replace this with your own duckiebot name.*
 
+*Layout not 100% OK, will be fixed soon*
+
 1. Boot the duckie
 	* Plug in USB cables & wait for LEDs to die out
       	* `ping erna.local`	to check if duckie is online. If not, wait a bit longer
