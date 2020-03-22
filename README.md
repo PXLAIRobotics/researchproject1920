@@ -78,6 +78,12 @@ Er kunnen ook default containers gebruikt worden om bv. [via keyboard de duckieb
 
 ## QAQ (Quizzically Asked Questions)
 
+#### Alles staat juist maar toch komen berichten niet door.
+Veel kans dat toch niet alles juist staat. Check [deze extra readme, demo code en hulp script](duckie_demos) voor een step by step guide.
+
+#### Onze duckie rijdt het decor in wanneer we gewoon rechtdoor rijden. How to fix?
+Er moet mogelijk nog gecalibreerd worden. Neem aandachtig (m.a.w. lees eerst eens door, begin daarna pas commando's in te voeren) de documentatie op deze pagina door: [https://docs.duckietown.org/DT19/opmanual_duckiebot/out/wheel_calibration.html](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/wheel_calibration.html). Het plakken van een lijn voor de calibratie is niet echt nodig, kijk gewoon hoe ver de duckie afwijkt en pas de waarde aan tot het wat acceptabel is.
+
 #### Ik kan niet pingen met `ping duckienaam.local`
 Probeer in dit geval ook eens `ping duckienaam` of `ping duckie_IP`. Als je hier problemen mee hebt, kan je best steeds <duckiebot.local> vervangen door het IP van de duckiebot.
 
