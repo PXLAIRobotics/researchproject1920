@@ -15,11 +15,11 @@
 	* `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
 	* Add a new network to the list:
 		```
-		`network={    
+		network={    
 			id_str="network3"    ssid="<name of your network>"```
 			psk="<password of your network>"
 			key_mgmt=WPA-PSK
-		}`
+		}
 		```
 	* Save the file: `Ctrl + X`, then `Y`, then `Enter`
 	* Reboot duckie: `sudo reboot` (will reboot after 1 minute)
