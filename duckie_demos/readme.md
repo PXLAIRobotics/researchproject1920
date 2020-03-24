@@ -14,7 +14,8 @@
 	* ssh into your duckie: `ssh duckie@erna.local` or `ssh duckie@<duckie_IP>`. The password of your duckie will be provided by the Sam entity
 	* `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
 	* Add a new network to the list:
-		`network={    id_str="network3"    ssid="<name of your network>"`
+		```network={    
+		id_str="network3"    ssid="<name of your network>"```
 		`	psk="<password of your network>"
 			key_mgmt=WPA-PSK
 		}`
