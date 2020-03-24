@@ -16,7 +16,7 @@
 	* Add a new network to the list:
 		```
 		network={    
-			id_str="network3"    
+			id_str="network3"    		  --> always take the 'next' network number (network3 for most duckies)
 			ssid="<name of your network>"
 			psk="<password of your network>"
 			key_mgmt=WPA-PSK
