@@ -2,8 +2,26 @@
 
 *The duckie in our guide is called 'erna'. Replace this with your own duckiebot name.*
 
+0. **(ONCE)** Configure duckie to connect to your home network 
+	* Prepare a mobile hotspot on your phone, name `duckienet`, password `quackquack`.
+	* Plug in duckie USB cables & wait for LEDs to die out
+	* `ping erna.local`	to check if duckie is online. If not, wait a bit longer
+		> if this still doesn't work 15 minutes after the LEDs, try `ping erna`  or  `ping <IP_of_duckie>`
+	* ssh into your duckie: `ssh duckie@erna.local` or `ssh duckie@<duckie_IP>`. The password of your duckie will be provided by the Sam entity
+	* `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
+	* Add a new network to the list:
+		`network={
+			  id_str="network3"
+			  ssid="<name of your network>"
+			  psk="<password of your network>"
+			  key_mgmt=WPA-PSK
+			}
+		`
+	* Save the file: `Ctrl + X`, then `Y`, then `Enter`
+	* Reboot duckie: `sudo reboot` (will reboot after 1 minute)
+	* Wait patiently for the duckie to be reborn. No LED feedback will be available this time.
 1. Boot the duckie
-	* Plug in USB cables & wait for LEDs to die out
+	* (If not done already in previous step: ) Plug in USB cables & wait for LEDs to die out
       	* `ping erna.local`	to check if duckie is online. If not, wait a bit longer
 		> if this still doesn't work 15 minutes after the LEDs, try `ping erna`  or  `ping <IP_of_duckie>`
 	* In a browser, visit 	erna.local:9000		check the list of containers. There should be a container 'demo_joystick'. It should be running. This container enables the /erna/joy topic to steer the duckie easily with some code.
