@@ -50,7 +50,9 @@ In principe moeten er verder geen Docker containers toegevoegd of aangepast word
 Zorg er in eerste instantie voor dat je met je laptop op hetzelfde netwerk verbonden bent als de duckie. Anders kunnen de devices elkaar niet vinden en dus ook niet communiceren. Standaard verbinden de duckiebots met het `AI Hub Devices_5Ghz` netwerk op de AI Hub. Zorg dus dat jij dat ook doet als je wil communiceren met de bot. Het wachtwoord voor dit netwerk werd reeds via Slack gecommuniceerd.
 Als tweede optie hebben we er voor gezorgd dat de duckies proberen te verbinden met een mobiele hotspot `duckienet` en het wachtwoord `quackquack`. Dit kan je gebruiken om thuis de duckiebots te integreren in jullie project.
 
+***
 **Opmerking:** Er lijkt in veel gevallen iets mis te gaan bij het versturen van berichten **naar** de duckiebot, wanneer je over een hotspot er mee werkt. Indien dit het geval is, kan je er ook voor zorgen dat de duckiebot bij opstarten automatisch probeert te verbinden met jouw thuisnetwerk. Bekijk [de step by step guide](duckie_demos) voor meer details.
+***
 
 Om een duckiebot op te starten, voorzie je deze van een opgeladen batterij en steek je de 2 USB kabeltjes er in. De duckiebot zal dan automatisch opstarten. Zo lang de LED's branden, is het opstart-proces nog bezig. Dit kan enkele minuten duren. Het kan soms nog even duren na het doven van de LED's, voor de duckiebot responsief is. Wanneer de LED's uit gaan, probeer je daarom best eerst te pingen naar de duckiebot, om te kijken of hij al responsief is. Pas daarna kan je met de bot communiceren.
 
