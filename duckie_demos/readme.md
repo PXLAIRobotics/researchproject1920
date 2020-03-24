@@ -2,6 +2,8 @@
 
 *The duckie in our guide is called 'erna'. Replace this with your own duckiebot name.*
 
+***
+*This first step is only needed once, when you want to connect the duckie to your home network.*
 0. **(ONCE)** Configure duckie to connect to your home network 
 	* Prepare a mobile hotspot on your phone, name `duckienet`, password `quackquack`.
 	* Plug in duckie USB cables & wait for LEDs to die out
@@ -10,16 +12,14 @@
 	* ssh into your duckie: `ssh duckie@erna.local` or `ssh duckie@<duckie_IP>`. The password of your duckie will be provided by the Sam entity
 	* `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
 	* Add a new network to the list:
-		`network={
-			  id_str="network3"
-			  ssid="<name of your network>"
-			  psk="<password of your network>"
-			  key_mgmt=WPA-PSK
-			}
-		`
+		network={    id_str="network3"    ssid="<name of your network>"
+			psk="<password of your network>"
+			key_mgmt=WPA-PSK
+		}
 	* Save the file: `Ctrl + X`, then `Y`, then `Enter`
 	* Reboot duckie: `sudo reboot` (will reboot after 1 minute)
 	* Wait patiently for the duckie to be reborn. No LED feedback will be available this time.
+***
 1. Boot the duckie
 	* (If not done already in previous step: ) Plug in USB cables & wait for LEDs to die out
       	* `ping erna.local`	to check if duckie is online. If not, wait a bit longer
