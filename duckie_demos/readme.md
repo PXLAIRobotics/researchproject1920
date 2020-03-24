@@ -6,7 +6,7 @@
 
 *This first step is only needed once, when you want to connect the duckie to your home network.*
 
-0. **(ONCE)** Configure duckie to connect to your home network 
+0. Configure duckie to connect to your home network 
 	* Prepare a mobile hotspot on your phone, name `duckienet`, password `quackquack`.
 	* Plug in duckie USB cables & wait for LEDs to die out
 	* `ping erna.local`	to check if duckie is online. If not, wait a bit longer
