@@ -14,10 +14,10 @@
 	* ssh into your duckie: `ssh duckie@erna.local` or `ssh duckie@<duckie_IP>`. The password of your duckie will be provided by the Sam entity
 	* `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
 	* Add a new network to the list:
-		network={    id_str="network3"    ssid="<name of your network>"
-			psk="<password of your network>"
+		`network={    id_str="network3"    ssid="<name of your network>"`
+		`	psk="<password of your network>"
 			key_mgmt=WPA-PSK
-		}
+		}`
 	* Save the file: `Ctrl + X`, then `Y`, then `Enter`
 	* Reboot duckie: `sudo reboot` (will reboot after 1 minute)
 	* Wait patiently for the duckie to be reborn. No LED feedback will be available this time.
