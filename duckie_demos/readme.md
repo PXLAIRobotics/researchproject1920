@@ -13,7 +13,7 @@
 		> if this still doesn't work 15 minutes after the LEDs, try `ping erna`  or  `ping <IP_of_duckie>`
 	* ssh into your duckie: `ssh duckie@erna.local` or `ssh duckie@<duckie_IP>`. The password of your duckie will be provided by the Sam entity
 	* `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
-	* Add a new network to the list:
+	* Add a new network config at the bottom of the list:
 		```
 		network={    
 			id_str="network3"    		  --> take the 'next' network number (network3 for most duckies)
