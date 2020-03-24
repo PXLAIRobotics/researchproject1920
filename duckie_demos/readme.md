@@ -17,7 +17,7 @@
 		```
 		network={    
 			id_str="network3"    
-			ssid="<name of your network>"```
+			ssid="<name of your network>"
 			psk="<password of your network>"
 			key_mgmt=WPA-PSK
 		}
