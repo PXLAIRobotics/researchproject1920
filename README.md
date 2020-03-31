@@ -83,16 +83,16 @@ Er kunnen ook default containers gebruikt worden om bv. [via keyboard de duckieb
 ## QAQ (Quizzically Asked Questions)
 
 #### Alles staat juist maar toch komen berichten niet door.
-Veel kans dat toch niet alles juist staat. Check [deze extra readme, demo code en hulp script](duckie_demos) voor een step by step guide.
+Check [deze extra readme, demo code en hulp script](duckie_demos) voor een step by step guide. Bijkomend is er [deze workaround (credits: Steve)](WorkaroundDuckiebot.pdf) die nog een aantal stappen bevat die je mogelijk moet uitvoeren.
 
 #### Onze duckie rijdt het decor in wanneer we gewoon rechtdoor rijden. How to fix?
-Er moet mogelijk nog gecalibreerd worden. Neem aandachtig (m.a.w. lees eerst eens door, begin daarna pas commando's in te voeren) de documentatie op deze pagina door: [https://docs.duckietown.org/DT19/opmanual_duckiebot/out/wheel_calibration.html](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/wheel_calibration.html). Het plakken van een lijn voor de calibratie is niet echt nodig, kijk gewoon hoe ver de duckie afwijkt en pas de waarde aan tot het wat acceptabel is.
+Er moet mogelijk nog gecalibreerd worden. Neem aandachtig (m.a.w. lees eerst eens door, begin daarna pas commando's in te voeren) de documentatie op deze pagina door: [https://docs.duckietown.org/DT19/opmanual_duckiebot/out/wheel_calibration.html](https://docs.duckietown.org/DT19/opmanual_duckiebot/out/wheel_calibration.html). Het plakken van een lijn voor de calibratie is niet echt nodig, kijk gewoon hoe ver de duckie afwijkt en pas de waarde aan tot het wat acceptabel is. Vergeet zeker niet de configuratie op te slaan wanneer je klaar bent.
 
 #### Ik kan niet pingen met `ping duckienaam.local`
 Probeer in dit geval ook eens `ping duckienaam` of `ping duckie_IP`. Als je hier problemen mee hebt, kan je best steeds <duckiebot.local> vervangen door het IP van de duckiebot.
 
 #### Ik wil de duckiebot verbinden via een router thuis
-Dit kan, maar dan moet je SSH'en naar de Raspberry Pi die op je duckiebot zit. Start je duckie op zoals tevoren. Indien je verbonden bent, kan je SSH'en door `ssh duckie@<duckienaam.local OF duckie_IP>` te doen. Voor het wachtwoord contacteer je Sam en Sam. 
+Dit kan, maar dan moet je SSH'en naar de Raspberry Pi die op je duckiebot zit. Check [deze extra readme, demo code en hulp script](duckie_demos) voor een step by step guide. Voor het SSH wachtwoord contacteer je Sam en Sam. 
 
 #### Ik moet extra Docker containers installeren op de duckiebot
 **Begin hier voorlopig niet aan, meer info binnenkort op deze plaats!**
